@@ -78,7 +78,8 @@
 
                     if(!empty($datas)){// 如果資料不為空，就印出資料
                         
-                        // 使用 nl2br 讓 \n 能呈現換行的結果。
+                        // 在 PHP 和 HTML(用來告訴瀏覽器網頁要怎麼顯示的語言) 中換行要使用 <br> 
+                        // nl2br 會將 \n 置換成 <br> 
                         echo nl2br("\n查詢結果: \n");
 
                         // 把 $datas 的值存入 $value
@@ -90,12 +91,12 @@
                             echo $value['name'];
                             echo "'s score is ";
                             echo $value['score'];
-                            echo nl2br("\n");  // 使用 nl2br 讓 \n 能呈現換行的結果。
+                            echo nl2br("\n");  // nl2br 會將 \n 置換成 <br> 
                         }   
                     }
                     else { // 為空表示沒資料
                         
-                        // 使用 nl2br 讓 \n 能呈現換行的結果。
+                        // nl2br 會將 \n 置換成 <br> 
                         echo nl2br("\n查無資料");
                     }                    
                     //------------------------------------------------------------- 
