@@ -43,8 +43,8 @@
 
                     //========== 請補上 sql 語句 ===========
                     //我需要從 `students`.`score` 裡面找到 name = $targetName 時的 name 和 score
-                    $sql = " ";  
-                    
+                    $sql = "SELECT `name`, `score` FROM `students`.`score` WHERE `name`= '$targetName' ";
+                    echo $sql;                
 //======================================== 以上為你需要動到的部分 ==========================================
 
                     //在目標資料庫執行 sql 語句的結果
